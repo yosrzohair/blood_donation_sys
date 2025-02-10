@@ -1,0 +1,13 @@
+<form method="POST">
+    {% csrf_token %}
+    <input type="text" name="name" placeholder="Institute Name" required> 
+    <input type="text" name="institute_type" placeholder="Institute Type" required>
+    <input type="text" name="phone_number" placeholder="Phone Number" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="text" name="city" placeholder="City" required>
+    <input type="text" name="address" placeholder="Address" required>
+    <input type="password" name="password" placeholder="Password" required>
+    <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+    <button type="submit">Sign Up</button>
+</form>
+<a href="{% url 'institute_signin' %}">Already have an account? Sign in</a>
